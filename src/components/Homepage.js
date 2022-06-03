@@ -7,6 +7,7 @@ function Homepage(props) {
 
   const imgclickhandler = (event) => {
     console.log("Image clicked");
+    props.paths = "/gamepage";
     setpagehandler(props.value);
   };
   return (
@@ -20,7 +21,10 @@ function Homepage(props) {
       ></img>
       <h2 className="text">Click on Gaming Paradise</h2>
       <p className="bottomtext">
-        Team <b>MADRAS CAFE</b>
+        Team{" "}
+        <b>
+          <i>MADRAS CAFE</i>
+        </b>
       </p>
     </div>
   );

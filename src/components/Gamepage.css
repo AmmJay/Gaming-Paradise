@@ -15,11 +15,23 @@
 }
 .gamepage .tile {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  /* top: 10%;
+  left: 10%; */
   z-index: 3;
   height: 30vh;
   width: 30wh;
+  -webkit-filter: drop-shadow(5px 5px 3px rgb(6, 6, 6));
+  filter: drop-shadow(10px 10px 10px rgb(5, 5, 5));
+}
+
+.gamepage .gametile {
+  position: absolute;
+  top: 17.8%;
+  left: 13.5%;
+  z-index: 5;
+  font-family: snell Roundhand;
+  font-size: 50px;
+  color: rgb(253, 253, 250);
   -webkit-filter: drop-shadow(5px 5px 3px rgb(6, 6, 6));
   filter: drop-shadow(10px 10px 10px rgb(5, 5, 5));
 }
