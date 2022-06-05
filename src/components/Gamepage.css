@@ -23,6 +23,9 @@
   -webkit-filter: drop-shadow(5px 5px 3px rgb(6, 6, 6));
   filter: drop-shadow(10px 10px 10px rgb(5, 5, 5));
 }
+.gamepage .tile:hover {
+  opacity: 0.9;
+}
 
 .gamepage .gametile {
   position: absolute;

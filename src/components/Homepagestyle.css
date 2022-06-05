@@ -54,3 +54,6 @@ p {
   left: 85%;
   font-size: 18px;
 }
+.background-image .logo:hover {
+  opacity: 0.9;
+}
