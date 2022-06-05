@@ -46,22 +46,26 @@ function GamePage(props) {
           sname={"Smasher"}
         />
       </Link>
-      <Gamepagetile
-        topsize={400}
-        leftsize={540}
-        toptext={440}
-        lefttext={600}
-        name={"Sudoku"}
-        sname={""}
-      ></Gamepagetile>
-      <Gamepagetile
-        topsize={400}
-        leftsize={940}
-        toptext={440}
-        lefttext={980}
-        name={"Rock-Paper"}
-        sname={"scissor"}
-      ></Gamepagetile>
+      <Link to="/sudoku">
+        <Gamepagetile
+          topsize={400}
+          leftsize={540}
+          toptext={440}
+          lefttext={600}
+          name={"Sudoku"}
+          sname={""}
+        />
+      </Link>
+      <Link to="/connectlines">
+        <Gamepagetile
+          topsize={400}
+          leftsize={940}
+          toptext={440}
+          lefttext={980}
+          name={"Connect"}
+          sname={"Lines"}
+        />
+      </Link>
     </div>
   );
 }
