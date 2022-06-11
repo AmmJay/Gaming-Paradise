@@ -1,8 +1,16 @@
 import "./Sudoku.css";
+import sdbg from "../../resources/tictactoebg.png";
 function Sudoku(props) {
   return (
-    <div>
-      <h2>I am Sudoku page</h2>
+    <div className="sudoku">
+      <img className="parent" src={sdbg} alt="I am sudoku"></img>
+      <h2 className="text">Sudoku</h2>
+      <table>
+        <tbody>
+          <td></td>
+        </tbody>
+      </table>
+      <input className="cellInput" />
     </div>
   );
 }
