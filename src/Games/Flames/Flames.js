@@ -1,5 +1,6 @@
 import { useState } from "react";
 import bgimage from "../../resources/flamesbg.png";
+import bgimagetwo from "./Resources/background01.gif";
 import whiteimg from "./Resources/white.png";
 import friendimg from "./Resources/Friend.png";
 import loveimg from "./Resources/Love.png";
@@ -28,8 +29,8 @@ function Flames(props) {
     return str.substring(0, x) + str.substring(x + 1);
   };
   const submitEventHadler = (event) => {
-    let fpname = enteredPersonOne.toLowerCase();
-    let sname = enteredSecondOne.toLowerCase();
+    let fpname = enteredPersonOne.toLowerCase().trim();
+    let sname = enteredSecondOne.toLowerCase().trim();
 
     // console.log(enteredPersonOne);
     // console.log(enteredSecondOne);
@@ -111,6 +112,7 @@ function Flames(props) {
   return (
     <div className="flames">
       <img className="parent" src={bgimage} alt="bgimage"></img>
+      <img className="parent" src={bgimagetwo} alt="bgimage"></img>
       <h2 className="gameName">Flames</h2>
 
       <div>
